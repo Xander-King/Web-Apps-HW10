@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cse383 HW 10</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    
+    <script src="info.js?rev=0"></script>
+
+    <style>
+    .nopadding{
+        padding: 0px;
+    }
+    .btn_font{
+        font-size: 30px;
+    }
+</style>
+</head>
+<body style="background: #26acff;">
+<h1 class="text-center">HW10 Calculator</h1>
+    <div class="container w-25" style="padding: 30px;border: 1px solid grey;margin-top: 50px;background: rgb(192, 100, 72);    box-shadow: 5px 5px #525252;    border-radius: 10px;">
+        <div class="row">
+            <div class="col-lg-12 nopadding">
+            <input type="text" name="calculation" id="calculation" class="form-control" style="padding: 10px;font-size: 30px;height: 50px;">
+            </div>
+        </div>
+    <div class="row">
+        <div class="col nopadding">
+            <button id="one" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('1')">1 </button>
+        </div>
+        <div class="col nopadding">
+            <button id="two" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('2')">2</button>
+        </div>
+        <div class="col nopadding">
+            <button id="three" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('3')">3</button>
+        </div>
+        <div class="col nopadding">
+            <button id="add" class="btn btn-success btn-block btn_font" onclick="UserClickExpression('+')">+</button>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col nopadding">
+                <button id="four" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('4')">4</button>
+            </div>
+            <div class="col nopadding">
+                <button id="five" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('5')">5</button>
+            </div>
+            <div class="col nopadding">
+                <button id="six" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('6')">6</button>
+            </div>
+            <div class="col nopadding">
+                <button id="minus" class="btn btn-success btn-block btn_font" onclick="UserClickExpression('-')">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col nopadding">
+                <button id="seven" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('7')">7</button>
+            </div>
+            <div class="col nopadding">
+                <button id="eight" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('8')">8</button>
+            </div>
+            <div class="col nopadding">
+                <button id="nine" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('9')">9</button>
+            </div>
+            <div class="col nopadding">
+                <button id="multiply" class="btn btn-success btn-block btn_font" onclick="UserClickExpression('*')">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col nopadding">
+                <button id="dot" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('.')">. </button>
+            </div>
+            <div class="col nopadding">
+                <button id="zero" class="btn btn-primary btn-block btn_font" onclick="UserClickNum('0')">0</button>
+            </div>
+            <div class="col nopadding">
+                <button id="equal" class="btn btn-primary btn-block btn_font" onclick="UserClickEquals()">=</button>
+            </div>
+            <div class="col nopadding">
+                <button id="divide" class="btn btn-success btn-block btn_font" onclick="UserClickExpression('/')">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col nopadding">
+                <button id="clear" class="btn btn-success btn-block btn_font" onclick="userClear()">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
